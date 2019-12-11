@@ -3,7 +3,7 @@ function Airport(capacity = 20){
   this.capacity = capacity;
 };
 Airport.prototype.instructLand = function(plane){
-  // if ((this.hangar).length === this.capacity)throw "At capacity, turn back!";
+  if ((this.hangar).length === this.capacity)throw "At capacity, turn back!";
   (this.hangar).push(plane);
 };
 Airport.prototype.instructTakeoff = function(plane){

@@ -1,9 +1,9 @@
 function Plane(){
-  this.flight = true;
+  this.inFlight = true;
 };
 Plane.prototype.land = function(){
-  this.flight = false;
+  this.inFlight = false;
 };
 Plane.prototype.takeoff = function(){
-  this.flight = true;
+  this.inFlight = true;
 };
