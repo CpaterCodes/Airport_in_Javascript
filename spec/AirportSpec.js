@@ -21,7 +21,7 @@ beforeEach(function(){
     expect(airport.hangar).not.toEqual(jasmine.arrayContaining([plane]));
   });
 
-  // it('Has default capacity at which it stops accepting planes',function(){
-  //   expect(fullAirport.instructLand(plane)).toThrow('At capacity, turn back!');
-  // });
+  it('Has default capacity at which it stops accepting planes',function(){
+    expect(fullAirport.instructLand(plane)).toThrow('At capacity, turn back!');
+  });
 });
